@@ -1,7 +1,7 @@
 # Final-year-project
 **ECE Final year project 2022 IET Lucknow**
 
-***Real time surveillance using Faster R-CNN***
+***Real time surveillance and analysis of a classroom using Faster R-CNN***
 
 Problem Statement :
 
