@@ -28,7 +28,7 @@ while currentframe < 10:
         name = './data/frame' + str(currentframe) + '.jpg'
         print('Creating...' + name)
 
-        # writing the extracted images
+        # writing the extracted images # At this stage I am saving data also to manage database 
         cv2.imshow(name, frame)
         cv2.imwrite(name, frame)
 
