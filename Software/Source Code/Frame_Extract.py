@@ -3,7 +3,7 @@ from time import sleep
 import cv2
 
 # Read the video from specified path
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(r"C:\Users\Hp\OneDrive\Desktop\github\Final-year-project\Software\Source Code\WIN_20211203_20_45_04_Pro.mp4")
 
 try:
 
@@ -18,7 +18,7 @@ except OSError:
 # frame
 currentframe = 0
 
-while currentframe < 10:
+while currentframe < 1500:
 
     # reading from frame
     ret, frame = cam.read()
@@ -29,13 +29,14 @@ while currentframe < 10:
         print('Creating...' + name)
 
         # writing the extracted images # At this stage I am saving data also to manage database 
-        cv2.imshow(name, frame)
+        #cv2.imshow(name, frame)
         cv2.imwrite(name, frame)
 
         # increasing counter so that it will
         # show how many frames are created
-        currentframe += 1
-        sleep(1)
+        currentframe += 15
+        cam.set(cv2.CAP_PROP_POS_FRAMES, currentframe)
+        
 
     else:
         break
