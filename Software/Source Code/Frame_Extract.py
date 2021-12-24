@@ -3,13 +3,13 @@ from time import sleep
 import cv2
 
 # Read the video from specified path
-cam = cv2.VideoCapture(r"C:\Users\Hp\OneDrive\Desktop\github\Final-year-project\Software\Source Code\WIN_20211203_20_45_04_Pro.mp4")
+cam = cv2.VideoCapture(r"C:\Users\Hp\OneDrive\Desktop\github\Final-year-project\Software\Source Code\maneesh.mp4")
 
 try:
 
     # creating a folder named data
-    if not os.path.exists('data'):
-        os.makedirs('data')
+    if not os.path.exists('image'):
+        os.makedirs('image')
 
 # if not created then raise error
 except OSError:
@@ -25,7 +25,7 @@ while currentframe < 1500:
 
     if ret:
         # if video is still left continue creating images
-        name = './data/frame' + str(currentframe) + '.jpg'
+        name = './image/image' + str(currentframe//15) + '.jpg'
         print('Creating...' + name)
 
         # writing the extracted images # At this stage I am saving data also to manage database 
