@@ -36,6 +36,10 @@
 
 *  Finally the database will be maintain according to visitor frequency.
 
+**4. Estimation**
+
+The collected data, divided it into three datasets, including training, validating, and testing. The face recognition accuracy and loss is schematically drawn in figure.
+![image](https://github.com/prashant070800/Final-year-project/blob/main/images/Output%20graph.png)
 
 
 
