@@ -6,10 +6,10 @@
 **Table of Content**
 
 1. [Introduction]()
-2. [Roadmap]()
-3. [Estimation]()
-5. [Demonstration]()
-6. [Members]()
+2. [Members]()
+3. [Roadmap]()
+4. [Estimation]()
+5. [Demonstration]() 
 
 **1. Introduction**
 
@@ -18,7 +18,13 @@
 * This project is based on the state of the art object detection network, faster-Region convolutional neural network.  Faster R-CNN, is composed of two modules. The first module is a deep fully convolutional network that proposes regions, and the second module is the Fast R-CNN detector that uses the proposed regions.  
 * The entire system is a single, unified network for object detection.
 
-**2. Roadmap**
+**2. Members**
+* [Ajeet Kumar Yadav](https://github.com/Ajeet-kumar1) --*Responsible for algorithms, implement the Face Recognition stage*
+* [Maneesh](https://github.com/maneesh06)-- *Generally Works on machine learning model and GUI*
+* [Pranjal Mittal](https://github.com/PranjalM99) --*Documentation and GUI*
+* [Prashant Singh](https://github.com/prashant070800) --*Database management and alert system*
+
+**3. Roadmap**
 
 *  The whole system can be modeled as the figure below. There are four stages, namely image preprocessing, person detection, face recognition, and database management.
  
