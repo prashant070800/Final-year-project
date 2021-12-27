@@ -1,6 +1,6 @@
 
 
-# ***Real time surveillance and analysis of a classroom using Faster R-CNN***
+# ***Intelligent security and information management system using video ananlysis( using faster R-CNN***
 
 
 **Table of Content**
