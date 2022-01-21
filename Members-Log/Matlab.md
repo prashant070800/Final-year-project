@@ -32,4 +32,4 @@ subplot(2,2,4);
 
 imhist(j);
 
-title('Histogram of Image after histogram equalization Nice');
+title('Histogram of Image after histogram equalization');
