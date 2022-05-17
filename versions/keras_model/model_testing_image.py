@@ -1,5 +1,4 @@
 from face_detection import extract_face
-from Embedding import get_embedding
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -12,7 +11,7 @@ label = ["Ajeet", "Maneesh", "Pranjal", "Raj"]
 
 
 
-t = r"C:\Users\ajeet\AppData\Local\Programs\Python\Python310\Finalize\face_dataset\val\RAJ\image81.jpg"
+t = r"C:\Users\Hp\OneDrive\Desktop\github\Final-year-project\images\image\image2.jpg"
 valx = extract_face(t)
 #print(valx.shape)
 cv2.imshow("valx", valx)
@@ -23,7 +22,7 @@ cv2.imshow("valx", valx)
 valx = np.array(valx)
 valx = valx.reshape((1, 160, 160, 3))
 print(valx.shape)
-model = load_model(r"C:\Users\ajeet\AppData\Local\Programs\Python\Python310\Finalize\Testing_keras.h5")
+model = load_model(r"C:\Users\Hp\OneDrive\Desktop\github\Final-year-project\versions\keras_model\Testing_keras.h5")
 pred = model.predict(valx)
 print(pred)
 print(label[np.argmax(pred)])

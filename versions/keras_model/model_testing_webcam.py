@@ -1,5 +1,4 @@
-from face_detection import extract_face
-
+from face_detection_webcam import extract_face
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -9,21 +8,22 @@ import warnings
 warnings.filterwarnings('ignore')
 
 label = ["Ajeet", "Maneesh", "Pranjal", "Raj"]
-model = load_model(r"C:\Users\ajeet\AppData\Local\Programs\Python\Python310\Finalize\Testing_keras.h5")
+model = load_model(r"C:\Users\Hp\OneDrive\Desktop\github\Final-year-project\versions\keras_model\Testing_keras.h5")
+img_counter = 0
 
 cam = cv2.VideoCapture(0)
-img_counter = 0
 while True:
     ret, frame = cam.read()
     if not ret:
         print('failed to grab frame')
         break
-    plt.imshow(frame)
+    cv2.imshow("frame", frame)
     valx = extract_face(frame)
-    plt.imshow(valx)
+    cv2.imshow("valx", valx)
     valx = np.array(valx)
     valx = valx.reshape((1, 160, 160, 3))
     print(valx.shape)
+
     pred = model.predict(valx)
     print(pred)
     print(label[np.argmax(pred)])
