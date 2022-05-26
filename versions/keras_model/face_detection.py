@@ -15,17 +15,22 @@ def extract_face(filename, required_size=(160, 160)):
 	detector = MTCNN()
 	# detect faces in the image
 	results = detector.detect_faces(pixels)
-	# extract the bounding box from the first face
-	x1, y1, width, height = results[0]['box']
-	# bug fix
+	x1, y1, width, height = person['box']
 	x1, y1 = abs(x1), abs(y1)
 	x2, y2 = x1 + width, y1 + height
-	# extract the face
 	face = pixels[y1:y2, x1:x2]
-	# resize pixels to the model size
 	image = Image.fromarray(face)
 	image = image.resize(required_size)
 	face_array = asarray(image)
+	# extract the bounding box from the first face
+	        
+	# bug fix
+	        
+	        
+	# extract the face
+	        
+	# resize pixels to the model size
+	        
 	return face_array
  
 

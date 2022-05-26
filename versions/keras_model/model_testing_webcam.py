@@ -3,11 +3,11 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
-#from keras_facenet import FaceNet
 import warnings
 warnings.filterwarnings('ignore')
 
 label = ["Ajeet", "Maneesh", "Pranjal", "Raj"]
+thres = 0.60
 model = load_model(r"C:\Users\Hp\OneDrive\Desktop\github\Final-year-project\versions\keras_model\Testing_keras.h5")
 img_counter = 0
 
@@ -18,15 +18,24 @@ while True:
         print('failed to grab frame')
         break
     cv2.imshow("frame", frame)
-    valx = extract_face(frame)
-    cv2.imshow("valx", valx)
-    valx = np.array(valx)
-    valx = valx.reshape((1, 160, 160, 3))
-    print(valx.shape)
+    try:
+        valx = extract_face(frame)
+        cv2.imshow("valx", valx)
+        valx = np.array(valx)
+        valx = valx.reshape((1, 160, 160, 3))
+        print(valx.shape)
+        pred = model.predict(valx)
+        print(pred)
+        probability = np.max(pred)
+        if probability>thres:
+            print(probability)
+            print(label[np.argmax(pred)])
+        else:
+            print("Unknown")
 
-    pred = model.predict(valx)
-    print(pred)
-    print(label[np.argmax(pred)])
+        
+    except:
+        print('No face')
     #to get continuous live video feed from my laptops webcam
     k  = cv2.waitKey(1)
     # if the escape key is been pressed, the app will stop
