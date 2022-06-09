@@ -6,10 +6,10 @@
 **Table of Content**
 
 1. [Introduction](#1-introduction)
-2. [Members]()
-3. [Roadmap]()
-4. [Estimation]()
-5. [Demonstration]() 
+2. [Members](#2-members)
+3. [Roadmap](#3-roadmap)
+4. [Estimation](#4-estimation)
+5. [Demonstration](#5-demonstration) 
 
 ## 1. Introduction
 
@@ -18,13 +18,13 @@
 * This project is based on the state of the art object detection network, faster-Region convolutional neural network.  Faster R-CNN, is composed of two modules, where the first module is a deep fully convolutional network that proposes regions, and the second module is the Fast R-CNN detector that uses the proposed regions.  
 * The entire system is a single, unified network for object detection.
 
-**2. Members**
+## 2. Members
 * [Ajeet Kumar Yadav](https://github.com/Ajeet-kumar1) --*Responsible for algorithms, implement the Face Recognition stage*
 * [Maneesh](https://github.com/maneesh06)-- *Generally Works on machine learning model and GUI*
 * [Pranjal Mittal](https://github.com/PranjalM99) --*Documentation and GUI*
 * [Prashant Singh](https://github.com/prashant070800) --*Database management and alert system*
 
-**3. Roadmap**
+## 3. Roadmap
 
 *  The whole system can be modeled as the figure below. It consists of four stages, namely image preprocessing, person detection, face recognition, and database management.
  
@@ -36,26 +36,28 @@
 
 *  Finally the database will be maintained according to visitor frequency.
 
-**4. Estimation**
+## 4. Estimation
 
 The collected data, divided it into three datasets, including training, validating, and testing. The face recognition accuracy and loss is schematically drawn in figure.
 ![image](https://github.com/prashant070800/Final-year-project/blob/main/images/Output%20graph.png)
 
-![image](https://github.com/prashant070800/Final-year-project/blob/main/images/Estimation.drawio.png)
 
+## 5. Demonstration
 
-
-**5. Face Recognition with Customized CNN**
+**5.1 Face Recognition with Customized CNN**
 
 ![image](https://github.com/prashant070800/Final-year-project/blob/main/images/ppt%20gif.gif)
 
 
 
 
-**6. Demostration**
+**5.2 Face Recogniton and data sharing at web page**
 
 ![image](https://github.com/prashant070800/Final-year-project/blob/main/images/ezgif.com-gif-maker%20(1).gif)
 
+**5.3 Webpage**
+
+![image](https://github.com/prashant070800/Final-year-project/blob/main/images/Picture2.jpg)
 
 
 
