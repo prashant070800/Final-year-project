@@ -45,4 +45,17 @@ The collected data, divided it into three datasets, including training, validati
 
 
 
+**5. Face Recognition with Customized CNN**
+
+![image](https://github.com/prashant070800/Final-year-project/blob/main/images/ppt%20gif.gif)
+
+
+
+
+**6. Demostration**
+
+![image](https://github.com/prashant070800/Final-year-project/blob/main/images/ezgif.com-gif-maker%20(1).gif)
+
+
+
 
